@@ -1,0 +1,7 @@
+# Sonido y música (18/11/2026)
+Todo se genera por código con WebAudio dentro de `index.html` (sin archivos de audio), así que el juego sigue siendo un único HTML.
+- **Arranque:** el audio empieza con el primer clic o pulsación de tecla (los navegadores lo exigen). Botón 🔊/🔇 en la esquina inferior derecha del lienzo y tecla **M**; la elección se guarda en el navegador.
+- **Música:** un tema por escena, que cambia con un fundido corto. Pantalla de título y aula: suave y soñolienta. Hub: etéreo. Mundo 1 (Neuromitos): juguetón. Mundo 2 (Bosque): misterioso. Mundo 3 (Galería): vals en menor. Mundo 4 (Biblioteca): solemne, de aire barroco. Mundo 5 (Carnaval): de feria. Mundo 6 (Gabinete): pulso minimalista y clínico. Las salas de cada mundo usan el tema de su mundo.
+- **Efectos:** clic en botones, toque en el lienzo, voz del diálogo (un pitido corto por letra, con tono distinto según quién habla), acierto, fallo, ficha nueva en el cuaderno, transición entre escenas y fanfarria al completar un mundo.
+- **Qué falta:** no he podido escucharlo (el entorno de pruebas no tiene audio). Comprobado: se crea el contexto de audio, cada tema programa notas sin errores y el silencio funciona. El volumen y la mezcla hay que ajustarlos de oído (constantes `AUD.mus`, `AUD.sfx_`, `vol` de cada `THEMES`).
+- Para cambiar un tema: editar `THEMES` (bpm, acordes en notas MIDI, escala, estilo `arp`, `oompah`, `waltz` o `pulse`) y `SCENE_THEME`.
